@@ -1,1 +1,11 @@
 https://github.com/NyashMan/DEMO2024?ysclid=lv6hv82z9y782230446
+
+
+RESOLV.CONF
+apt install resolvconf
+systemctl enable resolvconf.service
+systemctl start resolvconf.service
+systemctl status resolvconf.service
+resolvconf -u
+nano /etc/resolvconf/resolv.conf.d/head
+resolvconf -u
